@@ -1,0 +1,178 @@
+<link href="css/youth.css" rel="stylesheet"/> 
+ <link href="css/application.css" rel="stylesheet"/>
+
+
+
+<div id="timeoutPopup" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width:50%"> 
+      <div class="modal-content">
+        <div class="modal-body">
+        <div style="text-align:center; line-height:100px">
+       <div id="myProgress">
+        <div id="myBar"></div>
+    </div>
+
+        <h4>
+       You will be logged out in  {{timeoutCounter}} seconds.
+       </h4>
+
+        </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- logout pop up -->
+  
+
+
+
+  
+  <div id="logoutPopup" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width:50%"> 
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" class="close closeLogout" data-ng-click="redirectToHome()" >&times;</button>
+          <h1 class="modal-title">Logout</h1>
+        </div>
+        <div class="modal-body">
+        <div style="text-align:center; line-height:100px"><a href="https://auth.mygov.in/oauth2/authorize?response_type=code&client_id=myas&redirect_uri=http://youthin.com:8000/moya-ui/moya/authverification&scope=user_profile&state=dinamic"><img src="Images/mygov-logo.png" alt="Flag" title="Flag"/></a>
+        <br/>
+        <h4>
+        You have been successfully logged out of the YouthIn portal. <br/>You might still be logged into My Gov portal.  Please make sure to logout from the myGov portal also.<br/>
+<a href="https://secure.mygov.in/" target="_blank">
+
+Click here
+</a> to go to myGov Portal
+</h4>
+
+
+ <h4 class="hindi-text">
+        आपने सफलतापूर्वक YouthIn पोर्टल से लॉग आउट कर दिया है। <br/>आप अभी भी MyGov पोर्टल में लॉग इन हो सकते हो । कृपया MyGov पोर्टल से भी लॉगआउट सुनिश्चित करें।<br/>
+
+
+
+ myGov पोर्टल पर जाने के लिए यहां <a href="https://secure.mygov.in/" target="_blank"> क्लिक करें</a>
+</h4>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-ng-click="redirectToHome()" >Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--  -->
+
+<div data-ng-include="'app/Shared/message.html'"></div>
+
+
+<div class="top-features">
+  <div class="container">
+    <div class="left-features" > <img src="Images/flag-icon.png" alt="Flag" title="Flag"/> <span key="GOVERNMENT OF INDIA" class="languageText">GOVERNMENT OF INDIA</span>  </div>
+    <div class="right-features clearfix"> <span class="top-login"><em class="glyphicon glyphicon-home"></em> <a href="index.html" class="languageText" key="Youth In Home">Youth In Home</a></span>  <a href="javascript:void(0)" data-ng-show="isLogin && userToShowDashboard!='MYGOV'" data-ng-click="goToDashboard()" key="GoToDashBoard">
+    <i class="fa fa-bar-chart" aria-hidden="true"></i><span key="GoToDashBoard" class="languageText"> Go to DashBoard</span></a><span data-ng-show="isLogin" class="top-login"><em class="glyphicon glyphicon-user"></em> Welcome {{userNameData}}</span><span class="top-login"><em class="glyphicon glyphicon-log-in"></em> 
+    <a my-refresh href="https://auth.mygov.in/oauth2/authorize?response_type=code&client_id=myas&redirect_uri=http://youthin.com:8000/moya-ui/moya/authverification&scope=user_profile&state=dinamic" target="_self" data-ng-show="!isLogin" key="Login" class="languageText">Login</a>
+    <a href="javascript:void(0)" data-ng-show="isLogin" data-toggle="modal" data-target="#logoutPopup" data-ng-click="logOutTest()" key="Logout" class="languageText">Logout</a>
+
+    </span> 
+
+<span class="top-login" data-ng-show="!isLogin"><em class="glyphicon glyphicon-pencil"></em> 
+ <a href="https://auth.mygov.in/user/register?destination=oauth2/register/mygovweb" target="_blank" class="languageText" key="Register"> Register</a>
+ </span>
+    <span class="js-target-scroll languageText" key="Skip to main content">Skip to main content</span> 
+     <span class="top-english lang" onclick="SetCookie('language', 'en', exp); setLanguage('en');" ng-click="showEnglish()" id="en">English</span>
+     <!-- <span class="top-hindi lang" onclick="SetCookie('language', 'hi', exp); setLanguage('hi')" id="hi">हिन्दी</span> -->
+<span class="top-hindi lang" onclick="SetCookie('language', 'hi', exp); setLanguage('hi')" ng-click="showHindi()" id="hi">हिन्दी</span>
+
+    <span class="top-font" onclick="SetCookie('fontSize', 'decrease', exp); setFont()">A<sup>-</sup></span> 
+    <span class="top-font" onclick="SetCookie('fontSize', 'default', exp); setFont()">A</span> 
+    <span class="top-font" onclick="SetCookie('fontSize', 'increase', exp); setFont()">A<sup>+</sup></span> 
+
+
+    <span class="top-dark">
+     <input type="button" name="" value="A"  onClick="SetCookie(nameOfCookie, '1', exp); doRefresh();" class="color-standard" title="Standard"/>
+      <input type="button" name="" value="A"  onClick="SetCookie(nameOfCookie, '2', exp); doRefresh();" class="color-dark" title="White/Black"/>
+      </span> <!-- <span class="top-social"> <img src="Images/ico-fb.png" alt="Facebook" title="Facebook"/> </span> <span class="top-social"> <img src="Images/ico-tw.png" alt="Twitter" title="Twitter"> </span> --> </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<div class="topbar">
+  <div class="container">
+    <div class="left-top"> <a href="index.html"><img src="Images/logo-inner.png" alt="Logo" title="Logo"/></a> </div>
+    <div class="right-top clearfix"> <span class="developing"><em>"DEVELOPING AND TRANSFORMING INDIA"</em></span> <span class="mera-desh"><img src="Images/slogan.png" alt="Logo" title="Logo"/></span> <span class="youth-logo"><a href="http://yas.nic.in/" target="_blank"><img src="Images/youth-logo.png" alt="Logo" title="Logo"/></a></span> </div>
+  </div>
+</div>
+<div class="menu" data-ng-if="isMenu">
+  <div class="container">
+    <section>
+      <ul id="da-thumbs" class="da-thumbs">
+       <!--  <li class="active-menu"> <a href="index.html"> <img src="Images/home-menu.png" alt="" title=""/> <span>Home</span> </a> </li> -->
+        <li data-ng-repeat="menuItem in menuList">
+         <a href="{{menuItem.pageUrl}}" data-ng-click="dashboard(menuItem.name)" class="{{menuItem.multicolor}}" target="{{menuItem.targetPage}}"> 
+        <i class="{{menuItem.iconglyph}}"></i>
+         <img src="Images/{{menuItem.icon}}" alt="{{menuItem.title}}" title="{{menuItem.title}}"/> <span key="{{menuItem.name}}" class="languageText">{{menuItem.name}}</span>
+          <div><span>{{menuItem.menuDesc}}</span></div>
+          </a> 
+          </li>
+       
+      </ul>
+    </section>
+  </div>
+</div>
+
+
+<nav class="navbar blue-bg" data-ng-if="!isMenu">
+ <div class="container">
+      <div class="row">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+		
+       <li data-ng-repeat="menuitem in menuList" ng-show="!hindiDiv">
+            <a href="{{menuitem.pageUrl}}" class="{{menuitem.class}}" data-toggle="dropdown" data-ng-if="menuitem.subMenuDto!=null"> 
+            <em class="{{menuitem.logoutIcon}}"></em>  <span key="{{menuitem.menuName}}" class="languageText">{{menuitem.menuName}} </span>
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" data-ng-if="menuitem.subMenuDto!=null">
+                    <li data-ng-repeat="subitem in menuitem.subMenuDto">
+                       <a href="{{subitem.pageUrl}}"><span key="{{subitem.subMenuName}}" class="languageText"> {{subitem.subMenuName}} </span></a>
+                    </li>
+            </ul> 
+          
+              <a href="{{menuitem.pageUrl}}" data-ng-if="menuitem.subMenuDto==null"><span key="{{menuitem.menuName}}" class="languageText"> {{menuitem.menuName}}</span> </a>           
+          </li>
+
+           <li data-ng-repeat="menuitem in menuList" ng-show="hindiDiv">
+            <a href="{{menuitem.pageUrl}}" class="{{menuitem.class}}" data-toggle="dropdown" data-ng-if="menuitem.subMenuDto!=null"> 
+            <em class="{{menuitem.logoutIcon}}"></em>  <span key="{{menuitem.menuName}}" class="languageText">{{menuitem.menuNameHindi}} </span>
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" data-ng-if="menuitem.subMenuDto!=null">
+                    <li data-ng-repeat="subitem in menuitem.subMenuDto">
+                       <a href="{{subitem.pageUrl}}"><span key="{{subitem.menuNameHindi}}" class="languageText"> {{subitem.menuNameHindi}} </span></a>
+                    </li>
+            </ul> 
+          
+              <a href="{{menuitem.pageUrl}}" data-ng-if="menuitem.subMenuDto==null"><span key="{{menuitem.menuNameHindi}}" class="languageText"> {{menuitem.menuNameHindi}}</span> </a>           
+          </li>
+          
+        </ul>
+         </div>
+        </div>
+      </div>
+    </nav>
+  
+<script src="js/language.js" type="text/javascript"></script>
+  <span after-render></span>
+  <!--   <li class="dropdown orange-gradient"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Volunteer <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="Registration.html">Register</a></li>
+                <li><a href="#">Manage</a></li>
+              </ul>
+            </li> -->

@@ -1,0 +1,90 @@
+.slide-reveal.ng-enter {
+  -webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;
+
+  opacity:0.5;
+  position:relative;
+  opacity:0;
+  top:10px;
+}
+.slide-reveal.ng-enter-active {
+  top:0;
+  opacity:1;
+}
+
+.expand.ng-enter {
+  -webkit-transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+  -moz-transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+  -o-transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+  transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+
+  opacity:0;
+  max-height:0;
+  overflow:hidden;
+}
+.expand.ng-enter-active {
+  opacity:1;
+  max-height:40px;
+}
+
+.expand.ng-leave {
+  -webkit-transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+  -moz-transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+  -o-transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+  transition:0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+
+  opacity:1;
+  max-height:40px;
+  overflow:hidden;
+}
+.expand.ng-leave-active {
+  opacity:0;
+  max-height:0;
+}
+.alertCss{
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  z-index: 1200;
+  top:0 !important;
+  transition: 1s;
+  -webkit-transition:.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+  -moz-transition:.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+  -o-transition:.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+  transition:.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) all;
+}
+
+.animateAlert{
+   margin-top:60px;
+}
+
+  form.ng-invalid{
+    border: none !important;  
+    box-shadow: none !important;
+    outline : 0 0;
+  }
+
+.ng-dirty.ng-invalid{
+  border-color: red;
+  box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset,0 0 8px rgba(200,0,0,0.75);
+  outline : 0 8px;
+}
+
+.ng-pristine.ng-invalid{
+  outline : 0 8px;
+}
+
+.ng-pristine.ng-invalid : focus {
+  border-color: #66afe9 !important;
+  box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset,0 0 8px rgba(102,175,233,0.6);
+  outline : 0 8px;
+}
+
+ .panel-default.ng-dirty.ng-invalid{border-color: transparent !important;box-shadow:none;outline:none;}
+ .panel-default.ng-dirty{border-color: transparent !important;box-shadow:none;outline:none;}
+ .panel-collapse.ng-dirty{border-color: transparent !important;box-shadow:none;outline:none;}
+
+ 
+ 

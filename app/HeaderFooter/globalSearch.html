@@ -1,0 +1,60 @@
+<section id="faq" class="primary-bg">
+  <div class="container">
+
+     <div class="section_heading">
+
+          <h2 style="margin-top: 62px"> Search </h2>
+           
+        </div>
+      <div class="panel-group">
+            <div class="panel panel-default search-page" data-ng-repeat="searchList in searchResults">
+                <h2 class="panel-title"> 
+                <a href="#" data-toggle="modal" data-target="#modalPopup{{$index}}">
+                
+                  {{searchList.title}} </a>
+                  <span class="orange-text">&nbsp; - ({{searchList.organization}})</span>
+                </h2>
+              <div class="panel-collapse collapse in">
+                <div class="panel-body">
+                
+                <p>
+          		{{searchList.startDate}}
+          	</p>
+          	<p>
+          		{{searchList.endDate}}
+          	</p>
+
+                 <div class="fontSizeChange about-text" ng-bind-html = "searchList.newShortValue" after-render> </div> 
+                 <div class="clearfix"></div>
+
+                <a href="#" ng-init="limit=250" ng-show="searchList.description.length > limit" data-toggle="modal" data-target="#modalPopup{{$index}}" class="readmore">
+                 </a>
+          	
+                </div>
+              </div>
+            </div>
+            
+          </div>
+    
+  </div>
+</section>
+
+
+ <div data-ng-repeat="searchList in searchResults">
+ <div id="modalPopup{{$index}}" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width: 94%"> 
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h1 class="modal-title">{{searchList.title}}</h1>
+        </div>
+        <div class="modal-body fontSizeChange" ng-bind-html = "searchList.newPublishedValue" after-render>
+        </div>
+      
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

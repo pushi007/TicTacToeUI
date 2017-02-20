@@ -1,0 +1,6 @@
+{"code":"codeXXX","name":"asdasd","addresses":[{"addressLine1":"sddsd","addressLine2":"asda","city":"asdasd"
+,"createdBy":"test","dateCreated":"2015-12-01T12:16:43Z","errors":{"errors":[]},"id":2,"lastUpdated"
+:"2015-12-01T12:16:43Z","lastUpdatedBy":"test","state":"asdfasd","type":"home","zipcode":"234"}],"accounts"
+:[{"accountName":"test","accountNumber":"12312312","bankName":"Chase Manhattan Bank","createdBy":"dddd"
+,"dateCreated":"2015-12-01T12:16:43Z","errors":{"errors":[]},"id":1,"lastUpdated":"2015-12-01T12:16:43Z"
+,"lastUpdatedBy":"dddd","nickName":"sdasdASD","routingNumber":"234234"}]}

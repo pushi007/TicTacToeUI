@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+section.Home_bg:after{background:rgba(0, 0, 0, 0.92) !important}
+section.aboutyouth_bg:after{background:rgba(0, 0, 0, 0.92) !important}
+section.importantlink_bg:after{background:rgba(0, 0, 0, 0.92) !important}
+section.orgHome_bg:after{background:rgba(0, 0, 0, 0.92) !important}
+section.orgAbout_bg:after{background:rgba(0, 0, 0, 0.92) !important}
+section.orgEnroll_bg:after{background:rgba(0, 0, 0, 0.92) !important}
+section.orgActivities_bg:after{background:rgba(0, 0, 0, 0.92) !important}
+section.orgAchievement_bg:after{background:rgba(0, 0, 0, 0.92) !important}
+.gallery_bg:after{background:rgba(0, 0, 0, 0.92) !important}
+.faq_bg:after{background:rgba(0, 0, 0, 0.92) !important}
+section.orgContact_bg:after{background:rgba(0, 0, 0, 0.92) !important}
+
+.primary-bg {background:#000 !important;}
+.section_heading h2 {color: #fff}
+.section_heading h4{color:#ffff00!important;}
+.top-features {background:#000 !important; color:#ffff00 !important;}
+header {background:#000 !important;}
+.topbar {background:#000!important; color:#ffff00 !important;}
+.top-features a { color:#ffff00!important;}
+.sidebar-menu li a { color:#ffff00!important;}
+.navbar ul.nav.navbar-nav li a {color:#ffff00!important; background: #000 !important}
+.breakingNews {background: #000 !important;  border: solid 1px #333 !important;}
+.breakingNews > .bn-title {background: #111 !important}
+.breakingNews > .bn-title > span {border-color:transparent transparent transparent #111 !important;}
+.ti_news a {color:#ffff00 !important;}
+.ti_news span {color:#fff !important;}
+#stop-resume {color:#fff !important;}
+.about-box {color:#ffff00 !important;}
+.grid-table-links td a{color:#ffff00!important;}
+.grid-table-black td{color:#ffff00!important;}
+.services_detail a {color:#fff !important;}
+.services_detail span {border: 2px solid #ffff00 !important; color: #ffff00 !important;}
+.services_detail p {color:#ffff00 !important;}
+.title-timeline h3 a{color:#ffff00 !important;}
+.moduleItemIntrotext a{color:#ffff00 !important;}
+.modal-content  {background:#000 !important; border: solid 3px #333 !important;; }
+.modal-body {color:#ffff00 !important;}
+.modal-title  {color:#fff !important;}
+.modal-body li {color:#ffff00 !important;}
+.modal-header {border-bottom: 1px solid #111 !important;}
+.modal-footer {border-top: 1px solid #333 !important;}
+.modal-body h2 {color:#fff !important;}
+.grouped {border: 1px solid #484848 !important;}
+.green-text{color:#fff !important;}
+.faq_bg a {color:#fff !important;}
+.panel-body p {color: #ffff00 !important;}
+.contact_text h5 {color: #ffff00 !important;}
+.contact_text a {color: #fff !important; text-decoration: underline;}
+.contact_text span{color: #fff !important;}
+.navbar ul.nav.navbar-nav li.active a{color: #fff !important;}
+.image-left {border: 1px solid #3e3e3e !important;}
+.image-right {border: 1px solid #3e3e3e !important;}
+.grid-table table tr{background-color:#000 !important;}
+.grid-table table tr:nth-child(2n+1){background-color:#111 !important;}
+.grid-table td {border: 1px solid #545454 !important;}
+.grid-table th {border: 1px solid #9c9a9a !important;}
+.achivement-timeline-content .moduleItemIntrotext p {color: #fff !important;}
+.demo-gallery p {background: #000 !important; color: #ffff00 !important;}
+.demo-gallery > ul > li a {border: 3px solid #000!important;}
+.demo-gallery > ul > li {border: solid 1px #5a5a5a !important;}
+.modal-body .grouped h3 {color: #ffff00 !important;  border: 1px solid rgba(74, 71, 71, 0.35);}
+.grid-table-activity th {background: #424242 !important;  color: #ff0 !important;}
+.menu {
+background: #2d2d2d !important; /* Old browsers */
+background: -moz-linear-gradient(top,  #2d2d2d 0%, #000000 100%) !important; /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #2d2d2d 0%,#000000 100%) !important; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #2d2d2d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2d2d', endColorstr='#000000',GradientType=0 ) !important; /* IE6-9 */
+}
+.blue-bg{
+	background: #2d2d2d !important; /* Old browsers */
+background: -moz-linear-gradient(top,  #2d2d2d 0%, #000000 100%) !important; /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #2d2d2d 0%,#000000 100%) !important; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #2d2d2d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2d2d', endColorstr='#000000',GradientType=0 ) !important; /* IE6-9 */
+    border-bottom: solid 1px #444 !important;
+}
+.button-area {background: #000 !important;}
+.top-features .fa-bar-chart {color: #ffff00 !important;}
+.user-registration{color: #ffff00 !important;}
+.menu li a{color: #ffff00 !important;}
+.inner-page {background:#000 !important; color:#ffff00 !important}
+.discussions .item {border: solid 1px #616161 !important;}
+.Content {background:#000 !important;}
+.form-control {background-color: #171717!important; color: #a2a2a2 !important; border: 1px solid #3e3e3e!important;}
+.user-registration .blue-gradient {
+background: #606060 !important; /* Old browsers */
+background: -moz-linear-gradient(top,  #606060 0%, #000000 99%)!important; /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #606060 0%,#000000 99%) !important; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #606060 0%,#000000 99%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606060', endColorstr='#000000',GradientType=0 ) !important; /* IE6-9 */
+}
+.btn-success {background-color: #151515 !important;}
+.btn-danger {background-color: #151515 !important;}
+.btn-info {background-color: #151515 !important;}
+.grid-table th {background: #606060 !important; /* Old browsers */
+background: -moz-linear-gradient(top,  #606060 0%, #000000 99%)!important; /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #606060 0%,#000000 99%) !important; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #606060 0%,#000000 99%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606060', endColorstr='#000000',GradientType=0 ) !important; /* IE6-9 */
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {background-color: #4c4c4c !important;}
+.alert-box {background:#000 !important; border:solid 1px #333 !important;}
+.alert-box p {color: #fff !important;}
+.alert-box h1 {color: #ffff00 !important;}
+.red-text { color: red;  background: #2b2b2b;}
+.input-group-addon {background-color: #000 !important;  border: 1px solid #524e4e !important;}
+.pagination>li>a, .pagination>li>span { background-color: #171717 !important; border: 1px solid #4c4c4c!important;  color: #ffff00 !important;}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {border-color: #545454 !important;}
+.tab-content > div {border: solid 1px #949494 !important;}
+.view-label {color: #e2e2e2 !important;}
+.datepicker {background-color: #000 !important; color: #333 ;}
+.more-discussion {background: #272727 !important;}
+.username {color: #e6e6e6 !important;}
+.comment-row{border-bottom: solid 1px #4a4a4a !important;}
+
+.photo-banner { color:#ffff00; background:#000}
+.about-youth {background:#000; color:#ffff00}
+.news-announcements {background:#000; color:#ffff00}
+.list-group li:nth-child(odd) { background-color:#262626; }
+.list-group li:nth-child(even) { background-color:#1B1B1B; }
+.list-group-item a { color:#ffff00;}
+.sweep:before { background:#111; color:#ffff00}
+.news-announcements-viewall {color:#fff}
+.list-group-item .glyphicon {color: #999;}

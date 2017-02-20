@@ -1,0 +1,4 @@
+{
+	"HOST": "http://172.16.2.234:8080",	
+	"APP_CONTEXT": "moya-api/rest/moyaService/"
+}

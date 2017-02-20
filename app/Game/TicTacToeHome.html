@@ -1,0 +1,39 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="grid-table table-responsive" ng-if='searchResults.length'>
+				<!-- <table class="table table-striped table-condensed table-hover"> -->
+
+				<table>
+
+					<tbody>
+						<tr data-ng-repeat="rowofgame in game">
+							<td data-ng-repeat="columnofgame in rowofgame">0</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<p>hello!</p>
+		</div>
+	</div>
+</div>
+
+<script src="js/interface.js"></script>
+<script src="js/jquery.cloud9carousel.js"></script>
+<script src="js/commonNew.js"></script>
+
+<script type="text/javascript">
+	$(window).scroll(function() {
+		if ($(document).scrollTop() >= 60) { // this refers to window
+			$("#youthHomeLink").addClass("fixedLinks");
+		} else {
+			$("#youthHomeLink").removeClass("fixedLinks");
+
+		}
+	});
+</script>
